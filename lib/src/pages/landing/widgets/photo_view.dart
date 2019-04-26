@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:photographer/src/pages/widgets/thumb_view.dart';
+import 'package:photographer/src/pages/landing/widgets/thumb_view.dart';
 
 class PhotoView extends StatelessWidget {
   const PhotoView({

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:photographer/src/pages/widgets/follow_button.dart';
-import 'package:photographer/src/pages/widgets/photo_view.dart';
-import 'package:photographer/src/pages/widgets/stats_view.dart';
+import 'package:photographer/src/pages/landing/widgets/follow_button.dart';
+import 'package:photographer/src/pages/landing/widgets/photo_view.dart';
+import 'package:photographer/src/pages/landing/widgets/stats_view.dart';
 
 class Landing extends StatefulWidget {
   Landing({Key key}) : super(key: key);
