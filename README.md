@@ -1,16 +1,5 @@
-# photographer
+# Photographer App
 
-A new Flutter project.
+<img src="assets/images/screenshots/1.png" height="400em"/> &nbsp; 
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+UI inspiration taken from [uplabs.com](https://www.uplabs.com/posts/photographer-portfolio-1dbb8116-008e-4d4c-a88c-4640c8b42b18 )
