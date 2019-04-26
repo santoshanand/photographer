@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:photographer/src/pages/widgets/thumb_view.dart';
+import 'package:photographer/src/pages/widgets/follow_button.dart';
+import 'package:photographer/src/pages/widgets/photo_view.dart';
+import 'package:photographer/src/pages/widgets/stats_view.dart';
 
 class Landing extends StatefulWidget {
   Landing({Key key}) : super(key: key);
@@ -44,72 +46,15 @@ class _LandingState extends State<Landing> {
                     SizedBox(
                       height: 20,
                     ),
-                    SizedBox(
-                      width: 200,
-                      height: 44,
-                      child: FlatButton(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        color: Color(0xffFF9780),
-                        child: Text(
-                          'FOLLOW',
-                          style: TextStyle(color: Colors.white),
-                        ),
-                        onPressed: () {},
-                      ),
-                    ),
+                    FollowButton(),
                     SizedBox(
                       height: 20,
                     ),
-                    Wrap(
-                      spacing: 20,
-                      children: <Widget>[
-                        Column(
-                          children: <Widget>[
-                            Text('27'),
-                            Text('Shots'),
-                          ],
-                        ),
-                        Column(
-                          children: <Widget>[
-                            Text('100'),
-                            Text('Following'),
-                          ],
-                        ),
-                        Column(
-                          children: <Widget>[
-                            Text('1.2M'),
-                            Text('Followers'),
-                          ],
-                        ),
-                      ],
-                    ),
+                    StatsView(),
                     SizedBox(
                       height: 20,
                     ),
-                    Container(
-                      decoration: ShapeDecoration(
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(40),
-                            topRight: Radius.circular(40),
-                          ),
-                          side: BorderSide(color: Colors.black26),
-                        ),
-                      ),
-                      padding: EdgeInsets.all(20),
-                      child: Column(
-                        children: <Widget>[
-                          Text('PHOTO'),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          ThumbView(),
-                        ],
-                      ),
-                    ),
+                    PhotoView(),
                   ],
                 ),
               )
