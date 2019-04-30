@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 class FollowButton extends StatelessWidget {
+  final VoidCallback onPressed;
   const FollowButton({
     Key key,
+    @required this.onPressed,
   }) : super(key: key);
 
   @override
@@ -19,7 +21,7 @@ class FollowButton extends StatelessWidget {
           'FOLLOW',
           style: TextStyle(color: Colors.white),
         ),
-        onPressed: () {},
+        onPressed: this.onPressed,
       ),
     );
   }

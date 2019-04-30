@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:photographer/src/pages/home/home.dart';
+import 'package:photographer/src/pages/landing/landing.dart';
 
 class App extends StatelessWidget {
   @override
@@ -8,8 +8,8 @@ class App extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Photographer App',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.orange,
         ),
-        home: Home());
+        home: Landing());
   }
 }

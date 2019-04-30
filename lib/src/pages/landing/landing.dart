@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:photographer/src/pages/home/home.dart';
 import 'package:photographer/src/pages/landing/widgets/follow_button.dart';
 import 'package:photographer/src/pages/landing/widgets/photo_view.dart';
 import 'package:photographer/src/pages/landing/widgets/stats_view.dart';
+import 'package:page_transition/page_transition.dart';
 
 class Landing extends StatefulWidget {
   Landing({Key key}) : super(key: key);
@@ -46,7 +48,17 @@ class _LandingState extends State<Landing> {
                     SizedBox(
                       height: 20,
                     ),
-                    FollowButton(),
+                    FollowButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          PageTransition(
+                            type: PageTransitionType.fade,
+                            child: Home(),
+                          ),
+                        );
+                      },
+                    ),
                     SizedBox(
                       height: 20,
                     ),
